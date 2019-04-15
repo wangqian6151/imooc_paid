@@ -76,7 +76,7 @@ class ImoocPaySpider(scrapy.Spider):
 
         comment_url = response.css('.comp-tab-t > ul > li:nth-child(5) a::attr(href)').extract_first()
         print('comment_url11111', comment_url)
-        self.logger.debug('comment_url11111{}'.format(comment_url))
+        self.logger.debug('comment_url11111', comment_url)
         if comment_url:
             comment_url = response.urljoin(comment_url)
             print('comment_url22222', comment_url)

@@ -71,7 +71,7 @@ DOWNLOADER_MIDDLEWARES = {
 # See https://doc.scrapy.org/en/latest/topics/item-pipeline.html
 ITEM_PIPELINES = {
    # 'imooc_paid.pipelines.ImoocPipeline': 300,
-  #  'imooc_paid.pipelines.MongoPipeline': 300,
+    'imooc_paid.pipelines.MongoPipeline': 300,
     'imooc_paid.pipelines.MysqlPipeline': 301,
 }
 
